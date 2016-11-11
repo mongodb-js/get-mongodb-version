@@ -1,4 +1,4 @@
-# get-mongodb-version [![][npm_img]][npm_url] [![][travis_img]][travis_url] [![][coverage_img]][coverage_url] [![][gitter_img]][gitter_url]
+# get-mongodb-version [![][npm_img]][npm_url] [![][travis_img]][travis_url] [![][coverage_img]][coverage_url]
 
 Lookup download URL's for MongoDB versions.
 
@@ -76,5 +76,3 @@ Apache 2.0
 [npm_url]: https://www.npmjs.org/package/get-mongodb-version
 [coverage_img]: https://coveralls.io/repos/mongodb-js/get-mongodb-version/badge.svg?branch=master
 [coverage_url]: https://coveralls.io/r/mongodb-js/get-mongodb-version
-[gitter_img]: https://badges.gitter.im/Join%20Chat.svg
-[gitter_url]: https://gitter.im/mongodb-js/mongodb-js
