@@ -1,6 +1,6 @@
 {
   "name": "get-mongodb-version",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Get the MongoDB version for a path or uri.",
   "scripts": {
     "check": "mongodb-js-precommit",
