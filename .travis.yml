@@ -4,8 +4,6 @@ node_js:
   - 10.2.1
   - 8
   - 4
-before_install:
-  - npm i -g npm
 script:
   - npm test
 cache:
