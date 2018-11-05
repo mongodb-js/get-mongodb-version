@@ -3,11 +3,6 @@ var exec = require('child_process').exec;
 var startsWith = require('lodash.startswith');
 
 function configure(opts, done) {
-  if (opts instanceof mongodb.Db) {
-    opts = {
-      db: opts.db
-    };
-  }
   if (opts.db) return done(null, opts);
 
   if (opts.path) {
