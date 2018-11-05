@@ -9,7 +9,6 @@
     "get-mongodb-version": "bin/get-mongodb-version.js"
   },
   "dependencies": {
-    "debug": "*",
     "lodash.startswith": "^4.2.1",
     "minimist": "^1.1.1",
     "which": "^1.1.1"

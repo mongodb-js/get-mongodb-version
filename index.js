@@ -1,6 +1,5 @@
 var which = require('which');
 var exec = require('child_process').exec;
-var mongodb = require('mongodb');
 var startsWith = require('lodash.startswith');
 
 function configure(opts, done) {
@@ -12,7 +11,10 @@ function configure(opts, done) {
   if (opts.db) return done(null, opts);
 
   if (opts.path) {
-    if (startsWith(opts.path, 'mongodb://') || startsWith(opts.path, 'localhost')) {
+    if (
+      startsWith(opts.path, 'mongodb://') ||
+      startsWith(opts.path, 'localhost')
+    ) {
       if (!startsWith('mongodb://', opts.path)) {
         opts.path = 'mongodb://' + opts.path;
       }
@@ -22,6 +24,16 @@ function configure(opts, done) {
 
   if (opts.uri) {
     opts.close_connection = true;
+    try {
+      var mongodb = require('mongodb');
+    } catch (e) {
+      console.error(
+        'get-mongodb-version: Failed to load MongoDB driver. Cannot lookup version by URI.',
+        e
+      );
+      return done(e);
+    }
+
     return mongodb(opts.uri, function(err, db) {
       if (err) return done(err);
       opts.db = db;
