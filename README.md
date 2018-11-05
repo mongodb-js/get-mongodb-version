@@ -1,4 +1,4 @@
-# get-mongodb-version [![][npm_img]][npm_url] [![][travis_img]][travis_url] [![][coverage_img]][coverage_url]
+# get-mongodb-version [![][npm_img]][npm_url] [![][travis_img]][travis_url]
 
 Lookup download URL's for MongoDB versions.
 
@@ -74,5 +74,3 @@ Apache 2.0
 [travis_url]: https://travis-ci.org/mongodb-js/get-mongodb-version
 [npm_img]: https://img.shields.io/npm/v/get-mongodb-version.svg
 [npm_url]: https://www.npmjs.org/package/get-mongodb-version
-[coverage_img]: https://coveralls.io/repos/mongodb-js/get-mongodb-version/badge.svg?branch=master
-[coverage_url]: https://coveralls.io/r/mongodb-js/get-mongodb-version
